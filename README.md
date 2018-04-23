@@ -1,2 +1,2 @@
-# familytime-basics-cloud-config
+# family-time-basics-cloud-config
 Spring Cloud External Configuration Repository
