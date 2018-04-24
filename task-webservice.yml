@@ -13,7 +13,13 @@ spring:
   sleuth:
     sampler:
       percentage: 1.0
-
+mail:
+  host: smtp.gmail.com
+  port: 587
+  username: iffamilytime@gmail.com
+  password: xwlxrkgskiimeifs
+app:
+  hostname: http://family-time.thecoffeine.com/
 # When enabled=false, traces log to the console. Comment to send to zipkin
 sample:
   zipkin:
@@ -28,6 +34,14 @@ security:
           -----BEGIN PUBLIC KEY-----
           MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhVny3DfQqdvQaPj6SJiiFfPRGH/5k3OiAXTCsmpKnL/GVKZpfFjT3LhN7xoj0DzJLTCOE94eOjIHipFzxrL00kBCZJ3HOornKDpTh17yPuqJI6DNmvJaRBbc3SVQsO0vndnDAeOBiv4euGHH97sPZYFqhmwM35PboqxeWaHrfgWcA5F8VFTp+HDPr26G4sv/UqkR1LsfRoD4gzNJswi00eWcNjeoEzy71023VECQYDytUg/wVqWOJnShWOJnCBnuzmjrtOCg6O6ecdHhVaiRI0//ZR71x2oDW5pe+kgVhhM29TH8SVRjbAFh35obN6ppcF3A7PFLf+euZTsmXMaahQIDAQAB
           -----END PUBLIC KEY-----
+---
+spring:
+  profiles: development
+mail:
+  host: localhost
+  port: 3025
+  username: iffamilytime@gmail.com
+  password: hvccpovpxubgnkoc
 ---
 # task-webservice instance when used on Docker
 spring:
